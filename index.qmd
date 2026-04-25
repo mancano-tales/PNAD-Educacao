@@ -6,36 +6,19 @@ page-layout: full
 
 ## Sobre o projeto
 
-Este site apresenta visualizações interativas sobre **desigualdade educacional no Brasil**, 
-construidas a partir dos microdados da [PNAD](https://www.ibge.gov.br/estatisticas/sociais/trabalho/9127-pesquisa-nacional-por-amostra-de-domicilios.html) 
-e da [PNAD Contínua](https://www.ibge.gov.br/estatisticas/sociais/trabalho/17270-pnad-continua.html) do IBGE.
+Este projeto analisa as principais dimensões da **desigualdade educacional no Brasil** 
+a partir dos microdados da [PNAD Contínua](https://www.ibge.gov.br/estatisticas/sociais/trabalho/17270-pnad-continua.html) (IBGE).
 
-O objetivo é documentar e comunicar, com rigor metodológico e respaldo na literatura acadêmica, 
-as principais dimensões da desigualdade educacional brasileira:
+O objetivo é documentar, com rigor metodológico e respaldo na literatura acadêmica, 
+padrões persistentes de desigualdade educacional segundo:
 
-- **Escolaridade por renda e classe social**
-- **Desigualdade racial no acesso à educação**
-- **Disparidades regionais**
-- **Evolução temporal dos indicadores**
+- **Classe social e renda**
+- **Raça/cor**
+- **Região geográfica**
+- **Evolução temporal**
 
-## Como usar
+## Status
 
-Cada seção do menu traz um tema específico, com:
+Projeto em desenvolvimento. Análises e visualizações interativas serão adicionadas em breve.
 
-1. Contexto teórico e referências bibliográficas
-2. Notas metodológicas sobre a construção dos indicadores
-3. Gráficos interativos (zoom, tooltips, filtros)
-4. Código R reproduzível e disponível abertamente
-
-## Dados e metodologia
-
-Todas as análises utilizam os pesos amostrais corretos da PNAD Contínua 
-via pacote [`{PNADcIBGE}`](https://cran.r-project.org/package=PNADcIBGE), 
-garantindo representatividade nacional e regional. Os cálculos de variância 
-levam em consideração o desenho amostral complexo por meio do pacote `{survey}`.
-
-## Reprodutibilidade
-
-Todo o código está disponível no [repositório GitHub](https://github.com/mancano-tales/PNAD-Educacao).
-Os dados brutos da PNAD não são versionados (por questão de tamanho), 
-mas os scripts de download baixam os microdados diretamente do IBGE.
+O código está disponível no [repositório GitHub](https://github.com/mancano-tales/PNAD-Educacao).

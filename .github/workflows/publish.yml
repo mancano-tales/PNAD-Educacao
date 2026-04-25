@@ -1,22 +1,7 @@
-# =============================================================================
-# .github/workflows/publish.yml
-# GitHub Actions: build do site Quarto e deploy no GitHub Pages
-#
-# Gerado por: Claude (Anthropic) em 2026-04-23
-# Projeto   : PNAD-Educacao (https://github.com/mancano-tales/PNAD-Educacao)
-# Autor do projeto: mancano-tales
-#
-# Estratégia de freeze:
-#   - Os outputs dos chunks R são armazenados em _freeze/ e versionados.
-#   - O CI usa os resultados em cache e só reexecuta quando o freeze
-#     não existir ou for explicitamente invalidado.
-#   - Isso evita baixar os microdados da PNAD em cada push.
-# =============================================================================
-
 on:
   push:
     branches: [main]
-  workflow_dispatch:   # permite trigger manual pela aba Actions
+  workflow_dispatch:
 
 name: Publish Quarto Site
 
@@ -24,55 +9,12 @@ jobs:
   build-deploy:
     runs-on: ubuntu-latest
     permissions:
-      contents: write   # necessário para push na branch gh-pages
-
+      contents: write
     steps:
-      # 1. Checkout do código (incluindo _freeze/ cacheado)
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      # 2. Instala R
-      - name: Setup R
-        uses: r-lib/actions/setup-r@v2
-        with:
-          r-version: '4.3.3'
-          use-public-rspm: true
-
-      # 3. Cache de pacotes R (evita reinstalar em cada run)
-      - name: Cache R packages
-        uses: actions/cache@v4
-        with:
-          path: ${{ env.R_LIBS_USER }}
-          key: ${{ runner.os }}-r-${{ hashFiles('**/DESCRIPTION', '**/renv.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-r-
-
-      # 4. Instala dependências do sistema para pacotes R
-      - name: Install system dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y libcurl4-openssl-dev libssl-dev libxml2-dev
-
-      # 5. Instala pacotes R necessários
-      - name: Install R packages
-        run: |
-          Rscript -e 'install.packages(c(
-            "PNADcIBGE", "survey", "tidyverse",
-            "plotly",    "here",   "scales"
-          ), repos = "https://cloud.r-project.org")'
-
-      # 6. Instala Quarto
-      - name: Setup Quarto
-        uses: quarto-dev/quarto-actions/setup@v2
-        with:
-          version: 'release'
-
-      # 7. Build e deploy do site
-      #    --freeze: usa o cache de _freeze/, não reexecuta chunks R
-      - name: Render and Publish
-        uses: quarto-dev/quarto-actions/publish@v2
+      - uses: actions/checkout@v4
+      - uses: quarto-dev/quarto-actions/setup@v2
+      - uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
-          render: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

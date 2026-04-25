@@ -1,40 +1,29 @@
 project:
   type: website
-  output-dir: docs
 
 website:
   title: "Desigualdade Educacional no Brasil"
-  description: "Visualizações interativas de desigualdade educacional com microdados da PNAD e PNAD Contínua"
+  description: "Análise de desigualdade educacional com microdados da PNAD e PNAD Contínua"
   site-url: "https://mancano-tales.github.io/PNAD-Educacao"
   repo-url: "https://github.com/mancano-tales/PNAD-Educacao"
-  repo-actions: [edit, issue]
   navbar:
     left:
       - href: index.qmd
         text: Início
-      - href: graficos/desigualdade-escolaridade.qmd
-        text: Escolaridade
-      - href: graficos/raca-educacao.qmd
-        text: Raça e Educação
-      - href: graficos/renda-escolaridade.qmd
-        text: Renda e Escolaridade
     right:
       - icon: github
         href: https://github.com/mancano-tales/PNAD-Educacao
   page-footer:
-    center: "Dados: IBGE/PNAD Contínua · Análise: mancano-tales"
+    center: "Dados: IBGE/PNAD Contínua · Tales Mançano"
 
 format:
   html:
     theme: cosmo
-    toc: true
-    toc-depth: 3
-    code-fold: true
-    code-tools: true
+    toc: false
     lang: pt
 
 execute:
-  freeze: true
-  echo: true
+  freeze: false
+  echo: false
   warning: false
   message: false
