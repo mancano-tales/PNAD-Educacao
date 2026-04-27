@@ -10,6 +10,8 @@ website:
     left:
       - href: index.qmd
         text: Início
+      - href: graficos/desigualdade-renda-acesso.qmd
+        text: Renda e Acesso à Educação
     right:
       - icon: github
         href: https://github.com/mancano-tales/PNAD-Educacao
