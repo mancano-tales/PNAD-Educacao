@@ -16,8 +16,8 @@ website:
         text: Escolaridade
       - href: graficos/raca-educacao.qmd
         text: Raça e Educação
-      - href: graficos/renda-escolaridade.qmd
-        text: Renda e Escolaridade
+      - href: graficos/desigualdade-renda-acesso.qmd
+        text: Renda e Acesso à Educação
     right:
       - icon: github
         href: https://github.com/mancano-tales/PNAD-Educacao

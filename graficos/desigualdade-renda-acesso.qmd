@@ -1,0 +1,24 @@
+---
+title: "Desigualdade de Renda e Acesso à Educação"
+subtitle: "Análise da conclusão do ensino médio por decil de renda"
+author: "mancano-tales"
+date: today
+---
+
+## Contexto
+
+Esta página analisa a profunda relação entre a **desigualdade de renda** e o **acesso à educação** no Brasil. Os dados originais da PNAD/PNAD-C foram estruturados e processados na pasta `Data` (armazenada localmente e excluída do repositório por motivos de tamanho).
+
+Os jovens provenientes de famílias em decis de renda mais baixos historicamente enfrentam maiores barreiras para a permanência na escola e conclusão da educação básica.
+
+## Conclusão do Ensino Médio por Renda
+
+O gráfico interativo abaixo apresenta a evolução da taxa de conclusão do ensino médio (para pessoas de 18 a 24 anos) ao longo dos últimos anos. As linhas estão divididas pelos **10 decis de renda** da população brasileira.
+
+<iframe src="grafico_renda__ens_medio_decil_educacao.html" width="100%" height="650px" style="border:none;"></iframe>
+
+### Notas Metodológicas
+
+- **Fonte dos Dados:** Microdados da PNAD e PNAD Contínua (IBGE).
+- Os cálculos incorporam os pesos amostrais complexos para garantir a representatividade nacional.
+- O código de geração deste gráfico salva o *output* diretamente na pasta `graficos` do projeto, mantendo a reprodutibilidade da análise.

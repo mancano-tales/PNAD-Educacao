@@ -13,7 +13,7 @@ e da [PNAD Contínua](https://www.ibge.gov.br/estatisticas/sociais/trabalho/1727
 O objetivo é documentar e comunicar, com rigor metodológico e respaldo na literatura acadêmica, 
 as principais dimensões da desigualdade educacional brasileira:
 
-- **Escolaridade por renda e classe social**
+- **[Desigualdade de Renda e Acesso à Educação](graficos/desigualdade-renda-acesso.qmd)**
 - **Desigualdade racial no acesso à educação**
 - **Disparidades regionais**
 - **Evolução temporal dos indicadores**
