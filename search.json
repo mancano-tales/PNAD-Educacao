@@ -19,5 +19,26 @@
     "title": "Desigualdade Educacional no Brasil",
     "section": "Status",
     "text": "Status\nProjeto em desenvolvimento. Análises e visualizações interativas serão adicionadas em breve.\nO código está disponível no repositório GitHub."
+  },
+  {
+    "objectID": "graficos/desigualdade-renda-acesso.html",
+    "href": "graficos/desigualdade-renda-acesso.html",
+    "title": "Desigualdade de Renda e Acesso à Educação",
+    "section": "",
+    "text": "Esta página analisa a profunda relação entre a desigualdade de renda e o acesso à educação no Brasil. Os dados originais da PNAD/PNAD-C foram estruturados e processados na pasta Data (armazenada localmente e excluída do repositório por motivos de tamanho).\nOs jovens provenientes de famílias em decis de renda mais baixos historicamente enfrentam maiores barreiras para a permanência na escola e conclusão da educação básica."
+  },
+  {
+    "objectID": "graficos/desigualdade-renda-acesso.html#contexto",
+    "href": "graficos/desigualdade-renda-acesso.html#contexto",
+    "title": "Desigualdade de Renda e Acesso à Educação",
+    "section": "",
+    "text": "Esta página analisa a profunda relação entre a desigualdade de renda e o acesso à educação no Brasil. Os dados originais da PNAD/PNAD-C foram estruturados e processados na pasta Data (armazenada localmente e excluída do repositório por motivos de tamanho).\nOs jovens provenientes de famílias em decis de renda mais baixos historicamente enfrentam maiores barreiras para a permanência na escola e conclusão da educação básica."
+  },
+  {
+    "objectID": "graficos/desigualdade-renda-acesso.html#conclusão-do-ensino-médio-por-renda",
+    "href": "graficos/desigualdade-renda-acesso.html#conclusão-do-ensino-médio-por-renda",
+    "title": "Desigualdade de Renda e Acesso à Educação",
+    "section": "Conclusão do Ensino Médio por Renda",
+    "text": "Conclusão do Ensino Médio por Renda\nO gráfico interativo abaixo apresenta a evolução da taxa de conclusão do ensino médio (para pessoas de 18 a 24 anos) ao longo dos últimos anos. As linhas estão divididas pelos 10 decis de renda da população brasileira.\n\n\n\nNotas Metodológicas\n\nFonte dos Dados: Microdados da PNAD e PNAD Contínua (IBGE).\nOs cálculos incorporam os pesos amostrais complexos para garantir a representatividade nacional.\nO código de geração deste gráfico salva o output diretamente na pasta graficos do projeto, mantendo a reprodutibilidade da análise."
   }
 ]
